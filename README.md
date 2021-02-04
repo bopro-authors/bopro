@@ -1,1 +1,1 @@
-# bopro_icml21
+# Bayesian Optimization with a Prior for the Optimum
