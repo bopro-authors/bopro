@@ -1,0 +1,58 @@
+{
+    "application_name": "xgboost_42",
+    "optimization_objectives": ["Value"],
+    "optimization_iterations": 300,
+    "models": {
+        "model": "gaussian_process"
+    },
+    "prior_estimation_file": "prior_data/xgboost_prior.csv",
+    "design_of_experiment": {
+        "number_of_samples": 9
+    },
+    "custom_gaussian_prior_means": [0.0, 1.0, 0.6360508645648021, 0.4027910387675796, 1.0, 0.0, 0.0, 0.4211185836457497],
+    "custom_gaussian_prior_stds": [0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01],
+    "resample_mean": true,
+    "estimate_multivariate_gaussian": false,
+    "input_parameters": {
+        "x0": {
+            "parameter_type": "real",
+            "values": [0, 1],
+            "prior": "custom_gaussian"
+        },
+        "x1": {
+            "parameter_type": "real",
+            "values": [0, 1],
+            "prior": "custom_gaussian"
+        },
+        "x2": {
+            "parameter_type": "real",
+            "values": [0, 1],
+            "prior": "custom_gaussian"
+        },
+        "x3": {
+            "parameter_type": "real",
+            "values": [0, 1],
+            "prior": "custom_gaussian"
+        },
+        "x4": {
+            "parameter_type": "real",
+            "values": [0, 1],
+            "prior": "custom_gaussian"
+        },
+        "x5": {
+            "parameter_type": "real",
+            "values": [0, 1],
+            "prior": "custom_gaussian"
+        },
+        "x6": {
+            "parameter_type": "real",
+            "values": [0, 1],
+            "prior": "custom_gaussian"
+        },
+        "x7": {
+            "parameter_type": "real",
+            "values": [0, 1],
+            "prior": "estimate"
+        }
+    }
+}
